@@ -1,0 +1,358 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Verdana", "Meiryo", sans-serif;
+}
+
+header {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#gnavi {
+    width: 1000px;
+    overflow: hidden;
+    margin: 16px auto;
+}
+#gnavi ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#gnavi ul li {
+    width: 199px;
+    float: left;
+    margin-right: 1px;
+    text-align: center;
+}
+#gnavi ul li a {
+    display: block;
+    padding: 16px;
+    background-color: #DDDDDD;
+    color: #000000;
+    text-decoration: none;
+}
+#gnavi ul li.current a{
+    background-color: #F03709;
+    color: #FFFFFF;
+}
+#gnavi ul li a:hover {
+    background-color: #F03709;
+    color: #FFFFFF;
+}
+#wrapper {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.header h1 {
+    color: #F03709;
+    text-align: center;
+    width: 600px;
+}
+
+
+footer {
+    background-color:#003F6C;
+    text-align: center;
+    width: 1000px;
+    margin: 10px auto;
+}
+small.fsmall {
+    display: block;
+    color: #FFFFFF;
+    padding-bottom: 15px;
+    margin: 0px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid #888888;
+    text-align: center;
+}
+th {
+    width: 155px;
+    background-color: #F9CC9D;
+}
+td {
+    height : 50px;
+}
+
+.form dl {
+    display: flex;
+    flex-wrap: wrap;
+    width: 998px;
+    border: 1px solid #DDDDDD;
+    border-top: 0;
+}
+.form dl dt {
+    width: 340px;
+    padding: 10px;
+    padding-left: 30px;
+    margin: 0;
+    border-top: 1px solid #DDDDDD;
+    background-color: #F9CC9D;
+    float: left;
+}
+.form dl dd {
+    width: 577px;
+    padding: 10px;
+    padding-left: 30px;
+    margin: 0;
+    border-top: 1px solid #DDDDDD;
+    background-color: #FFFFFF;
+    border-left: 1px solid #DDDDDD;
+}
+#sendbuttoncover {
+    text-align: center;
+}
+#sendbutton {
+    background-color: #F03709;
+    border: none;
+    padding: 10px 80px;
+    border-radius: 10px;
+    font-size: 18px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: background-color 0.1s linear;
+}
+#sendbutton:hover {
+    background-color:#EE5630;
+}
+#modifybutton {
+    background-color: #003F6C;
+    border: none;
+    padding: 10px 80px;
+    border-radius: 10px;
+    font-size: 18px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: background-color 0.1s linear;
+}
+#modifybutton:hover {
+    background-color: #2878B1;
+}
+.hidden {
+    display: none;
+}
+.error {
+    color: #FF0000;
+    font-weight: bold;
+}
+.button {
+    background-color: #F03709;
+    text-decoration: none;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: background-color 0.1s linear;
+}
+.button:hover {
+    background-color: #EE5630;
+}
+.modifybutton {
+    background-color: #003F6C;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 18px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: background-color 0.1s linear;
+}
+.modifybutton:hover {
+    background-color: #2878B1;
+}
+.delbutton {
+    background-color: #FF0000;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 18px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: background-color 0.1s linear;
+}
+.delbutton:hover {
+    background-color: #FD4545;
+}
+#changebutton {
+    background-color: #F03709;
+    border: none;
+    padding: 10px 50px;
+    border-radius: 10px;
+    font-size: 18px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: background-color 0.1s linear;
+}
+#sendbutton:hover {
+    background-color:#EE5630;
+}
+#changebuttoncover {
+    text-align: right;
+    padding: 0 16px;
+    overflow: hidden;
+}
+.float {
+    float: left;
+}
+#csvbutton {
+    background-color: #003F6C;
+    border: none;
+    padding: 10px 50px;
+    margin-left: 50px;
+    margin-right: 130px;
+    border-radius: 10px;
+    font-size: 18px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: background-color 0.1s linear;
+}
+#modifybutton:hover {
+    background-color: #2878B1;
+}
+.loginform-wrapper{
+    max-width: 370px;
+    position: relative;
+    z-index: 1;
+    background: #FFFFFF;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+}
+.logininput {
+    border:0;
+    padding:10px;
+    font-size:1.3em;
+    border:solid 1px #CCCCCC;
+    margin:0 0 20px;
+    width:300px;
+}
+.loginerror {
+    width: 300px;
+    padding: 10px;
+    margin: auto;
+    color: #FF0000;
+    background-color: #FFF0F0;
+    text-align: left;
+    border: 2px solid;
+    border-radius: 10px;
+}
+.bold {
+    font-weight: bold;
+}
+.account {
+    background-color: #F03709;
+    text-decoration: none;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    color: #FFFFFF;
+    transition: background-color 0.1s linear;
+    right: 0px;
+    margin-top: 21.44px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 0px;
+    width: 130px;
+    display: block;
+}
+.account:hover {
+    background-color: #EE5630;
+}
+.dropdown {
+    display: none;
+    position: absolute;
+    width: 130px;
+    background-color: #FFFFFF;
+    text-decoration: none;
+    list-style: none;
+    border: solid #EE5630;
+    padding: 10px;
+    margin-left: 25px;
+    margin-top: 0px;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #FFFFFF;
+    text-align: center;
+    transition: background-color 0.1s linear;
+}
+.dropdown a{
+    text-decoration: none;
+    color: #000000;
+}
+.dropdown li a:hover {
+    color: #F03709;
+    font-weight: bold;
+}
+.dropdown li{
+    color: #000000;
+}
+.account:hover ~ .dropdown {
+    display: block;
+}
+.dropdown:hover {
+    display: block;
+}
+.spacer {
+    width: 200px;
+}
+
+.review {
+    width: 100%;
+    height: 200px;
+    resize: none;
+    font-size: 16px;
+    font-family: "Verdana", "Meiryo", sans-serif;
+}
+
+.pw {
+    margin-bottom: 4px;
+}
+
+.date {
+    width: 300px;
+    float: left;
+}
+.date table {
+    margin-bottom: 50px;
+}
+.indexfooter {
+    clear: both;
+}
+.indexbutton {
+    background-color: #F03709;
+    text-decoration: none;
+    border: none;
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    height: 30px;
+    width: 164px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: background-color 0.1s linear;
+}
+.indexbutton:hover {
+    background-color: #EE5630;
+}
+.index p{
+    height: 50px;
+    flex-shrink: 0;
+}
